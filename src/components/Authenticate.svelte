@@ -24,9 +24,11 @@
     <div class="authContainer">
         <form>
             <h1>{register ? "Register" : "Login"}</h1>
+
             {#if error}
                 <p class="error">The information you have entered is incorrect</p>
             {/if}
+
             <label>
                 <p class={email ? " above" :"  center"}>Email</p>
                 <input 
@@ -35,6 +37,7 @@
                     placeholder="Email" 
                 />
             </label>
+
             <label>
                 <p class={password ? " above" : " center"}>Password</p>
                 <input 
@@ -43,14 +46,20 @@
                     placeholder="Password" 
                 />
             </label>
-            <label>
-                <p class={confirmPassword ? " above" : " center"}>Confirm Password</p>
-                <input 
-                    bind:value={confirmPassword} 
-                    type="password" 
-                    placeholder="Confirm Password" 
-                />
-            </label>
+
+            {#if register}
+                <label>
+                    <p class={confirmPassword ? " above" : " center"}>
+                        Confirm Password
+                    </p>
+                    <input 
+                        bind:value={confirmPassword} 
+                        type="password" 
+                        placeholder="Confirm Password" 
+                    />
+                </label>
+            {/if}
+
             <button type="submit">Submit</button>
         </form>
         <div class="options">
