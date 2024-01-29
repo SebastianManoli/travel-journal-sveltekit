@@ -34,7 +34,7 @@
                 <input 
                     bind:value={email} 
                     type="email" 
-                    placeholder="Email" 
+                    placeholder="Email"
                 />
             </label>
 
@@ -153,7 +153,7 @@
 
     form label {
         position: relative;
-        border: 2px solid white;
+        border: 1px solid white;
         border-radius: 5px;
     }
 
@@ -166,7 +166,7 @@
         background-color: white;
         color: black;
         padding: 10px 0;
-        border: 2px solid black;
+        border: 1px solid black;
         border-radius: 20px;
         font-size: 1.2rem;
         font-weight: 600;
@@ -186,7 +186,7 @@
         pointer-events: none;
         color: black;
         border-radius: 4px;
-        padding: 0 8px;
+        padding: 0 9px;
         font-size: 0.8rem;
     }
 
@@ -194,7 +194,7 @@
         top: 0;
         left: 24px;
         background: white;
-        border: solid 2px black;
+        border: solid 1px black;
         font-size: 0.7rem;
     }
 
