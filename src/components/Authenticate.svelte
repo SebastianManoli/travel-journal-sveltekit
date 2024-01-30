@@ -52,7 +52,7 @@
                     <p class={confirmPassword ? " above" : " center"}>
                         Confirm Password
                     </p>
-                    <input 
+                    <input
                         bind:value={confirmPassword} 
                         type="password" 
                         placeholder="Confirm Password" 
@@ -163,20 +163,20 @@
 
     form button {
         border: none;
-        background-color: white;
-        color: black;
+        color: white;
         padding: 10px 0;
-        border: 1px solid black;
+        border: 1px solid white;
         border-radius: 20px;
         font-size: 1.2rem;
         font-weight: 600;
         cursor: pointer;
-    }
-
-    form button:hover {
         background: transparent;
-        color:white;
         border-color: white;
+    }
+    
+    form button:hover {
+        background-color: #71AEFE;
+        color:white;
     }
 
     .above,
