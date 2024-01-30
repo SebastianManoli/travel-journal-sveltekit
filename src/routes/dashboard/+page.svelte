@@ -42,5 +42,5 @@
         align-items: center;
         gap: 4px;
     }
-
+    
 </style>
